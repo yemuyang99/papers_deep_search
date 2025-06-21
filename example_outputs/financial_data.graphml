@@ -1,0 +1,977 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="node" attr.name="sem_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="abstract" attr.type="string"/>
+<key id="d0" for="node" attr.name="title" attr.type="string"/>
+<graph edgedefault="directed"><node id="http://arxiv.org/abs/2011.01843v2">
+  <data key="d0">Tabular Transformers for Modeling Multivariate Time Series</data>
+  <data key="d1">Tabular datasets are ubiquitous in data science applications. Given their
+importance, it seems natural to apply state-of-the-art deep learning algorithms
+in order to fully unlock their potential. Here we propose neural network models
+that represent tabular time series that can optionally leverage their
+hierarchical structure. This results in two architectures for tabular time
+series: one for learning representations that is analogous to BERT and can be
+pre-trained end-to-end and used in downstream tasks, and one that is akin to
+GPT and can be used for generation of realistic synthetic tabular sequences. We
+demonstrate our models on two datasets: a synthetic credit card transaction
+dataset, where the learned representations are used for fraud detection and
+synthetic data generation, and on a real pollution dataset, where the learned
+encodings are used to predict atmospheric pollutant concentrations. Code and
+data are available at https://github.com/IBM/TabFormer.</data>
+  <data key="d2">1b055049c568be70d6a762679cdb93f630d5d6e6</data>
+</node>
+<node id="http://arxiv.org/abs/2109.12546v1">
+  <data key="d0">Synthetic Data Generation for Fraud Detection using GANs</data>
+  <data key="d1">Detecting money laundering in gambling is becoming increasingly challenging
+for the gambling industry as consumers migrate to online channels. Whilst
+increasingly stringent regulations have been applied over the years to prevent
+money laundering in gambling, despite this, online gambling is still a channel
+for criminals to spend proceeds from crime. Complementing online gambling's
+growth more concerns are raised to its effects compared with gambling in
+traditional, physical formats, as it might introduce higher levels of problem
+gambling or fraudulent behaviour due to its nature of immediate interaction
+with online gambling experience. However, in most cases the main issue when
+organisations try to tackle those areas is the absence of high quality data.
+Since fraud detection related issues face the significant problem of the class
+imbalance, in this paper we propose a novel system based on Generative
+Adversarial Networks (GANs) for generating synthetic data in order to train a
+supervised classifier. Our framework Synthetic Data Generation GAN (SDG-GAN),
+manages to outperformed density based over-sampling methods and improve the
+classification performance of benchmarks datasets and the real world gambling
+fraud dataset.</data>
+  <data key="d2">c430d68cfc827c32d701725607ce8406c61357b0</data>
+</node>
+<node id="http://arxiv.org/abs/2401.00965v1">
+  <data key="d0">Improve Fidelity and Utility of Synthetic Credit Card Transaction Time  Series from Data-centric Perspective</data>
+  <data key="d1">Exploring generative model training for synthetic tabular data, specifically
+in sequential contexts such as credit card transaction data, presents
+significant challenges. This paper addresses these challenges, focusing on
+attaining both high fidelity to actual data and optimal utility for machine
+learning tasks. We introduce five pre-processing schemas to enhance the
+training of the Conditional Probabilistic Auto-Regressive Model (CPAR),
+demonstrating incremental improvements in the synthetic data's fidelity and
+utility. Upon achieving satisfactory fidelity levels, our attention shifts to
+training fraud detection models tailored for time-series data, evaluating the
+utility of the synthetic data. Our findings offer valuable insights and
+practical guidelines for synthetic data practitioners in the finance sector,
+transitioning from real to synthetic datasets for training purposes, and
+illuminating broader methodologies for synthesizing credit card transaction
+time series.</data>
+  <data key="d2">71c8774cd25b30a267f3e521cf47813269d96b94</data>
+</node>
+<node id="7794fd925ee49b41e7eb975013facc1d152f233f">
+  <data key="d0">FraudAmmo: Large Scale Synthetic Transactional Dataset for Payment Fraud Detection</data>
+  <data key="d1"></data>
+  <data key="d2">7794fd925ee49b41e7eb975013facc1d152f233f</data>
+</node>
+<node id="http://arxiv.org/abs/2304.10819v4">
+  <data key="d0">Auditing and Generating Synthetic Data with Controllable Trust  Trade-offs</data>
+  <data key="d1">Real-world data often exhibits bias, imbalance, and privacy risks. Synthetic
+datasets have emerged to address these issues. This paradigm relies on
+generative AI models to generate unbiased, privacy-preserving data while
+maintaining fidelity to the original data. However, assessing the
+trustworthiness of synthetic datasets and models is a critical challenge. We
+introduce a holistic auditing framework that comprehensively evaluates
+synthetic datasets and AI models. It focuses on preventing bias and
+discrimination, ensures fidelity to the source data, assesses utility,
+robustness, and privacy preservation. We demonstrate the framework's
+effectiveness by auditing various generative models across diverse use cases
+like education, healthcare, banking, and human resources, spanning different
+data modalities such as tabular, time-series, vision, and natural language.
+This holistic assessment is essential for compliance with regulatory
+safeguards. We introduce a trustworthiness index to rank synthetic datasets
+based on their safeguards trade-offs. Furthermore, we present a
+trustworthiness-driven model selection and cross-validation process during
+training, exemplified with "TrustFormers" across various data types. This
+approach allows for controllable trustworthiness trade-offs in synthetic data
+creation. Our auditing framework fosters collaboration among stakeholders,
+including data scientists, governance experts, internal reviewers, external
+certifiers, and regulators. This transparent reporting should become a standard
+practice to prevent bias, discrimination, and privacy violations, ensuring
+compliance with policies and providing accountability, safety, and performance
+guarantees.</data>
+  <data key="d2">80d9053c89c7df0767be962edbac8899923836ad</data>
+</node>
+<node id="http://arxiv.org/abs/1910.03033v1">
+  <data key="d0">Synthesizing Credit Card Transactions</data>
+  <data key="d1">Two elements have been essential to AI's recent boom: (1) deep neural nets
+and the theory and practice behind them; and (2) cloud computing with its
+abundant labeled data and large computing resources.
+  Abundant labeled data is available for key domains such as images, speech,
+natural language processing, and recommendation engines. However, there are
+many other domains where such data is not available, or access to it is highly
+restricted for privacy reasons, as with health and financial data. Even when
+abundant data is available, it is often not labeled. Doing such labeling is
+labor-intensive and non-scalable.
+  As a result, to the best of our knowledge, key domains still lack labeled
+data or have at most toy data; or the synthetic data must have access to real
+data from which it can mimic new data. This paper outlines work to generate
+realistic synthetic data for an important domain: credit card transactions.
+  Some challenges: there are many patterns and correlations in real purchases.
+There are millions of merchants and innumerable locations. Those merchants
+offer a wide variety of goods. Who shops where and when? How much do people
+pay? What is a realistic fraudulent transaction?
+  We use a mixture of technical approaches and domain knowledge including
+mechanics of credit card processing, a broad set of consumer domains:
+electronics, clothing, hair styling, etc. Connecting everything is a virtual
+world. This paper outlines some of our key techniques and provides evidence
+that the data generated is indeed realistic.
+  Beyond the scope of this paper: (1) use of our data to develop and train
+models to predict fraud; (2) coupling models and the synthetic dataset to
+assess performance in designing accelerators such as GPUs and TPUs.</data>
+  <data key="d2">cfd096ea0419079b7122d3e00af28d390ba3e2db</data>
+</node>
+<node id="733a6590ede31cd10e67181bcf9e2e4b4061b125">
+  <data key="d0">Generating synthetic data using REaLTabFormer, and assessing the probabilistic measure of statistical disclosure risk</data>
+  <data key="d1"></data>
+  <data key="d2">733a6590ede31cd10e67181bcf9e2e4b4061b125</data>
+</node>
+<node id="f2f11d2063464f5661f857e5fc4976cb3cb982a4">
+  <data key="d0">Generating synthetic data in finance: opportunities, challenges and pitfalls</data>
+  <data key="d1"></data>
+  <data key="d2">f2f11d2063464f5661f857e5fc4976cb3cb982a4</data>
+</node>
+<node id="http://arxiv.org/abs/2002.02271v1">
+  <data key="d0">Using generative adversarial networks to synthesize artificial financial  datasets</data>
+  <data key="d1">Generative Adversarial Networks (GANs) became very popular for generation of
+realistically looking images. In this paper, we propose to use GANs to
+synthesize artificial financial data for research and benchmarking purposes. We
+test this approach on three American Express datasets, and show that properly
+trained GANs can replicate these datasets with high fidelity. For our
+experiments, we define a novel type of GAN, and suggest methods for data
+preprocessing that allow good training and testing performance of GANs. We also
+discuss methods for evaluating the quality of generated data, and their
+comparison with the original real data.</data>
+  <data key="d2">ba203b385415bddb0a9a34799cbd673825242ce1</data>
+</node>
+<node id="67096e110a43a824d1cb0e196e0a90092d167060">
+  <data key="d0">Enhancing return forecasting using LSTM with agent-based synthetic data</data>
+  <data key="d1"></data>
+  <data key="d2">67096e110a43a824d1cb0e196e0a90092d167060</data>
+</node>
+<node id="http://arxiv.org/abs/2503.04164v1">
+  <data key="d0">CoFinDiff: Controllable Financial Diffusion Model for Time Series  Generation</data>
+  <data key="d1">The generation of synthetic financial data is a critical technology in the
+financial domain, addressing challenges posed by limited data availability.
+Traditionally, statistical models have been employed to generate synthetic
+data. However, these models fail to capture the stylized facts commonly
+observed in financial data, limiting their practical applicability. Recently,
+machine learning models have been introduced to address the limitations of
+statistical models; however, controlling synthetic data generation remains
+challenging. We propose CoFinDiff (Controllable Financial Diffusion model), a
+synthetic financial data generation model based on conditional diffusion models
+that accept conditions about the synthetic time series. By incorporating
+conditions derived from price data into the conditional diffusion model via
+cross-attention, CoFinDiff learns the relationships between the conditions and
+the data, generating synthetic data that align with arbitrary conditions.
+Experimental results demonstrate that: (i) synthetic data generated by
+CoFinDiff capture stylized facts; (ii) the generated data accurately meet
+specified conditions for trends and volatility; (iii) the diversity of the
+generated data surpasses that of the baseline models; and (iv) models trained
+on CoFinDiff-generated data achieve improved performance in deep hedging task.</data>
+  <data key="d2">36e05d85bdd6da9e586c43f6b322d88dfbcafbf3</data>
+</node>
+<node id="0c1b9a58325a478fc7a3788d79859684ef5c1867">
+  <data key="d0">Robust Synthetic Data Generation for Sequential Financial Models Using Hybrid Variational Autoencoder-Markov Chain Monte Carlo Architectures</data>
+  <data key="d1"></data>
+  <data key="d2">0c1b9a58325a478fc7a3788d79859684ef5c1867</data>
+</node>
+<node id="df946123bc6bbeb9a7bce1ce48006191a92960f3">
+  <data key="d0">SynDEc: A Synthetic Data Ecosystem</data>
+  <data key="d1">
+ Given the critical role of data availability for growth and innovation in financial services, especially small and mid-sized banks lack the data volumes required to fully leverage AI advancements for enhancing fraud detection, operational efficiency, and risk management. With existing solutions facing challenges in scalability, inconsistent standards, and complex privacy regulations, we introduce a synthetic data sharing ecosystem (SynDEc) using generative AI. Employing design science research in collaboration with two banks, among them UnionBank of the Philippines, we developed and validated a synthetic data sharing ecosystem for financial institutions. The derived design principles highlight synthetic data setup, training configurations, and incentivization. Furthermore, our findings show that smaller banks benefit most from SynDEcs and our solution is viable even with limited participation. Thus, we advance data ecosystem design knowledge, show its viability for financial services, and offer practical guidance for privacy-resilient synthetic data sharing, laying groundwork for future applications of SynDEcs.</data>
+  <data key="d2">df946123bc6bbeb9a7bce1ce48006191a92960f3</data>
+</node>
+<node id="2406e511ad723cae3b697086ebeaf1e19e1c3dd7">
+  <data key="d0">GAN+ABM to Simulate Suspicious Money Laundering Trajectories</data>
+  <data key="d1"></data>
+  <data key="d2">2406e511ad723cae3b697086ebeaf1e19e1c3dd7</data>
+</node>
+<node id="a74e551f6cbdf782e7bcb94a72e725713c3fa9bb">
+  <data key="d0">Systematic Review of Generative Modelling Tools and Utility Metrics for Fully Synthetic Tabular Data</data>
+  <data key="d1"></data>
+  <data key="d2">a74e551f6cbdf782e7bcb94a72e725713c3fa9bb</data>
+</node>
+<node id="0d4641b36dde8313b34cf199d10254d2d7742fae">
+  <data key="d0">Entity-based Financial Tabular Data Synthesis with Diffusion Models</data>
+  <data key="d1">In the rapidly evolving financial industry, the adoption of synthetic tabular data is on the rise to augment scarce data and facilitate data sharing. Existing synthetic tabular data generation methods often overlook a crucial aspect of financial datasets: the presence of a special column representing entities, such as companies or individuals. Treating this column as a mere categorical feature has significant drawbacks, including limiting the model to the original dataset’s entities, increasing privacy risks, and lacking efficient methods for generating data conditioned on specific entities. We introduce EntTabDiff, a diffusion model-based method that addresses these challenges by synthesizing tabular data conditioned on entities. EntTabDiff comprises two components: one that learns the distribution of entities to generate synthetic ones, and another that synthesizes tabular data based on these entities. We demonstrate the effectiveness of EntTabDiff using three financial datasets. Experimental results show that EntTabDiff synthesizes data with high utility and improved fidelity.</data>
+  <data key="d2">0d4641b36dde8313b34cf199d10254d2d7742fae</data>
+</node>
+<node id="576f240e3fb6edb09d2c224064bd960fb67c72a6">
+  <data key="d0">Simulating Asset Prices using Conditional Time-Series GAN</data>
+  <data key="d1">We propose a data-driven model called conditional time-series generative adversarial networks (CTS-GAN), for simulating financial time-series data, like asset prices. While GANs have been applied to data generation, existing models struggle to capture the temporal characteristics of time-series data. TimeGAN, a GAN-variant, addressed this by incorporating a learned latent space jointly optimized with supervised and adversarial goals for in-sample data generation. In finance however, practical applications often require out-of-sample time-series data, simulated under specific conditions. We thus implement our five-network architecture and loss functions with allowance for conditional information, in order to generate out-of-sample multivariate time-series data. Evaluations conducted on the generated data illustrates the high quality of CTS-GAN’s outputs, and a potential application in risk management for stock-only portfolios is demonstrated.</data>
+  <data key="d2">576f240e3fb6edb09d2c224064bd960fb67c72a6</data>
+</node>
+<node id="16d459a38441a9fcc08e7b4b87c8fd15c6390fa4">
+  <data key="d0">Comprehensive Review of Synthetic Data Generation Techniques and Their Applications in Healthcare, Finance, and Marketing</data>
+  <data key="d1">The demand for privacy-preserving, high-quality data has driven the rapid development of synthetic data generation techniques. Data scarcity, privacy regulations, and the need for large-scale datasets are some of the challenges these methods aim to address. Key methodologies for synthetic data generation include Generative Adversarial Networks (GANs), Variational Autoen- coders (VAEs), and rule-based systems. This review highlights the strengths, limitations, and practical applications of these techniques across various fields. It also explores ethical considerations related to privacy and fairness, focusing on privacy-preserving models such as differential privacy and federated learning. Despite the potential of synthetic data to overcome major barriers in data-driven industries, issues around data fidelity, fairness, and utility remain unresolved. Future research should prioritize the responsible use of synthetic data.</data>
+  <data key="d2">16d459a38441a9fcc08e7b4b87c8fd15c6390fa4</data>
+</node>
+<node id="http://arxiv.org/abs/2411.02947v1">
+  <data key="d0">Time-Causal VAE: Robust Financial Time Series Generator</data>
+  <data key="d1">We build a time-causal variational autoencoder (TC-VAE) for robust generation
+of financial time series data. Our approach imposes a causality constraint on
+the encoder and decoder networks, ensuring a causal transport from the real
+market time series to the fake generated time series. Specifically, we prove
+that the TC-VAE loss provides an upper bound on the causal Wasserstein distance
+between market distributions and generated distributions. Consequently, the
+TC-VAE loss controls the discrepancy between optimal values of various dynamic
+stochastic optimization problems under real and generated distributions. To
+further enhance the model's ability to approximate the latent representation of
+the real market distribution, we integrate a RealNVP prior into the TC-VAE
+framework. Finally, extensive numerical experiments show that TC-VAE achieves
+promising results on both synthetic and real market data. This is done by
+comparing real and generated distributions according to various statistical
+distances, demonstrating the effectiveness of the generated data for downstream
+financial optimization tasks, as well as showcasing that the generated data
+reproduces stylized facts of real financial market data.</data>
+  <data key="d2">33147f9158055868c51b11429d0764c7de67cf3b</data>
+</node>
+<node id="http://arxiv.org/abs/2410.22519v1">
+  <data key="d0">Evaluating utility in synthetic banking microdata applications</data>
+  <data key="d1">Financial regulators such as central banks collect vast amounts of data, but
+access to the resulting fine-grained banking microdata is severely restricted
+by banking secrecy laws. Recent developments have resulted in mechanisms that
+generate faithful synthetic data, but current evaluation frameworks lack a
+focus on the specific challenges of banking institutions and microdata. We
+develop a framework that considers the utility and privacy requirements of
+regulators, and apply this to financial usage indices, term deposit yield
+curves, and credit card transition matrices. Using the Central Bank of
+Paraguay's data, we provide the first implementation of synthetic banking
+microdata using a central bank's collected information, with the resulting
+synthetic datasets for all three domain applications being publicly available
+and featuring information not yet released in statistical disclosure. We find
+that applications less susceptible to post-processing information loss, which
+are based on frequency tables, are particularly suited for this approach, and
+that marginal-based inference mechanisms to outperform generative adversarial
+network models for these applications. Our results demonstrate that synthetic
+data generation is a promising privacy-enhancing technology for financial
+regulators seeking to complement their statistical disclosure, while
+highlighting the crucial role of evaluating such endeavors in terms of utility
+and privacy requirements.</data>
+  <data key="d2">dd0fa0da26ab95ab0b52df894306bf224d701f12</data>
+</node>
+<node id="http://arxiv.org/abs/2410.20808v2">
+  <data key="d0">zGAN: An Outlier-focused Generative Adversarial Network For Realistic  Synthetic Data Generation</data>
+  <data key="d1">The phenomenon of "black swans" has posed a fundamental challenge to
+performance of classical machine learning models. The perceived rise in
+frequency of outlier conditions, especially in post-pandemic environment, has
+necessitated exploration of synthetic data as a complement to real data in
+model training. This article provides a general overview and experimental
+investigation of the zGAN model architecture developed for the purpose of
+generating synthetic tabular data with outlier characteristics. The model is
+put to test in binary classification environments and shows promising results
+on realistic synthetic data generation, as well as uplift capabilities
+vis-\`a-vis model performance. A distinctive feature of zGAN is its enhanced
+correlation capability between features in the generated data, replicating
+correlations of features in real training data. Furthermore, crucial is the
+ability of zGAN to generate outliers based on covariance of real data or
+synthetically generated covariances. This approach to outlier generation
+enables modeling of complex economic events and augmentation of outliers for
+tasks such as training predictive models and detecting, processing or removing
+outliers. Experiments and comparative analyses as part of this study were
+conducted on both private (credit risk in financial services) and public
+datasets.</data>
+  <data key="d2">1ea8731c932d53ff0f274515f39d4b24ea5fdb75</data>
+</node>
+<node id="d89872de07f90d83f93c1f26af3ab5d52a428d98">
+  <data key="d0">Graph-theoretical Approach to Enhance Accuracy of Financial Fraud Detection Using Synthetic Tabular Data Generation</data>
+  <data key="d1"></data>
+  <data key="d2">d89872de07f90d83f93c1f26af3ab5d52a428d98</data>
+</node>
+<node id="http://arxiv.org/abs/2410.09850v1">
+  <data key="d0">Can GANs Learn the Stylized Facts of Financial Time Series?</data>
+  <data key="d1">In the financial sector, a sophisticated financial time series simulator is
+essential for evaluating financial products and investment strategies.
+Traditional back-testing methods have mainly relied on historical data-driven
+approaches or mathematical model-driven approaches, such as various stochastic
+processes. However, in the current era of AI, data-driven approaches, where
+models learn the intrinsic characteristics of data directly, have emerged as
+promising techniques. Generative Adversarial Networks (GANs) have surfaced as
+promising generative models, capturing data distributions through adversarial
+learning. Financial time series, characterized 'stylized facts' such as random
+walks, mean-reverting patterns, unexpected jumps, and time-varying volatility,
+present significant challenges for deep neural networks to learn their
+intrinsic characteristics. This study examines the ability of GANs to learn
+diverse and complex temporal patterns (i.e., stylized facts) of both univariate
+and multivariate financial time series. Our extensive experiments revealed that
+GANs can capture various stylized facts of financial time series, but their
+performance varies significantly depending on the choice of generator
+architecture. This suggests that naively applying GANs might not effectively
+capture the intricate characteristics inherent in financial time series,
+highlighting the importance of carefully considering and validating the
+modeling choices.</data>
+  <data key="d2">2cfb63832d0769cb0a732df7957914b8f8f4a5dd</data>
+</node>
+<node id="125510e831a4a419954336847167133015010043">
+  <data key="d0">DFCH: Diffusion Based Conditional Heteroskedasticity for Generating Long-Term and High-Frequency Financial Time-Series Data</data>
+  <data key="d1"></data>
+  <data key="d2">125510e831a4a419954336847167133015010043</data>
+</node>
+<node id="bc2dc0afd73c3a39ea750f48a7a5ee98178c48e6">
+  <data key="d0">A Comprehensive Review of Generative AI in Finance</data>
+  <data key="d1">The integration of generative AI (GAI) into the financial sector has brought about significant advancements, offering new solutions for various financial tasks. This review paper provides a comprehensive examination of recent trends and developments at the intersection of GAI and finance. By utilizing an advanced topic modeling method, BERTopic, we systematically categorize and analyze existing research to uncover predominant themes and emerging areas of interest. Our findings reveal the transformative impact of finance-specific large language models (LLMs), the innovative use of generative adversarial networks (GANs) in synthetic financial data generation, and the pressing necessity of a new regulatory framework to govern the use of GAI in the finance sector. This paper aims to provide researchers and practitioners with a structured overview of the current landscape of GAI in finance, offering insights into both the opportunities and challenges presented by these advanced technologies.</data>
+  <data key="d2">bc2dc0afd73c3a39ea750f48a7a5ee98178c48e6</data>
+</node>
+<node id="6daf42babffebfbed1efdd590de7fc27acbc78d6">
+  <data key="d0">Modeling Asset Price Process: An Approach for Imaging Price Chart with Generative Diffusion Models</data>
+  <data key="d1">Artificial Intelligence (AI) models have been recently studied to discover data patterns for prediction and forecasting tasks in finance. However, the use of deep generative models in finance remains relatively unexplored. In this paper, we investigate the potential of deep generative diffusion models to estimate unknown dynamics using multiple simulations based on stock chart images. We first demonstrate a novel pre-processing framework and synthetic image generation using opening, high, low, and closing stock chart images to train neural networks. Without assuming the specific process as the underlying asset price process, we can generate synthetic data without predetermined assumptions of the underlying movements of stock prices by trained generative diffusion models. The experimental results demonstrate that the proposed method successfully replicates well-known asset price processes. With various simulation paths, we can also accurately estimate option pricing on the S &amp;P 500. We conclude that financial simulation with AI can be a novel approach to financial decision-making.</data>
+  <data key="d2">6daf42babffebfbed1efdd590de7fc27acbc78d6</data>
+</node>
+<node id="http://arxiv.org/abs/2407.19848v3">
+  <data key="d0">Generative model for financial time series trained with MMD using a  signature kernel</data>
+  <data key="d1">Generating synthetic financial time series data that accurately reflects
+real-world market dynamics holds tremendous potential for various applications,
+including portfolio optimization, risk management, and large scale machine
+learning. We present an approach for training generative models for financial
+time series using the maximum mean discrepancy (MMD) with a signature kernel.
+Our method leverages the expressive power of the signature transform to capture
+the complex dependencies and temporal structures inherent in financial data. We
+employ a moving average model to model the variance of the noise input,
+enhancing the model's ability to reproduce stylized facts such as volatility
+clustering. Through empirical experiments on S&amp;P 500 index data, we demonstrate
+that our model effectively captures key characteristics of financial time
+series and outperforms a comparable GAN-based approach. In addition, we explore
+the application of the synthetic data generated to train a reinforcement
+learning agent for portfolio management, achieving promising results. Finally,
+we propose a method to add robustness to the generative model by tweaking the
+noise input so that the generated sequences can be adjusted to different market
+environments with minimal data.</data>
+  <data key="d2">492d244da8647554a7439883786cfe931ec4c342</data>
+</node>
+<node id="f789b75d667a11e14a21751be2acf99acfc236e0">
+  <data key="d0">FinDS2: A Novel Data Synthesis System for Fintech Product Risks</data>
+  <data key="d1"></data>
+  <data key="d2">f789b75d667a11e14a21751be2acf99acfc236e0</data>
+</node>
+<node id="http://arxiv.org/abs/2406.19396v3">
+  <data key="d0">SimLOB: Learning Representations of Limited Order Book for Financial  Market Simulation</data>
+  <data key="d1">Financial market simulation (FMS) serves as a promising tool for
+understanding market anomalies and the underlying trading behaviors. To ensure
+high-fidelity simulations, it is crucial to calibrate the FMS model for
+generating data closely resembling the observed market data. Previous efforts
+primarily focused on calibrating the mid-price data, leading to essential
+information loss of the market activities and thus biasing the calibrated
+model. The Limit Order Book (LOB) data is the fundamental data fully capturing
+the market micro-structure and is adopted by worldwide exchanges. However, LOB
+is not applicable to existing calibration objective functions due to its
+tabular structure not suitable for the vectorized input requirement. This paper
+proposes to explicitly learn the vectorized representations of LOB with a
+Transformer-based autoencoder. Then the latent vector, which captures the major
+information of LOB, can be applied for calibration. Extensive experiments show
+that the learned latent representation not only preserves the non-linear
+auto-correlation in the temporal axis, but the precedence between successive
+price levels of LOB. Besides, it is verified that the performance of the
+representation learning stage is consistent with the downstream calibration
+tasks. Thus, this work also progresses the FMS on LOB data, for the first time.</data>
+  <data key="d2">df3a27179dd89dd0a9a9b62d5ac1b218eae8f825</data>
+</node>
+<node id="http://arxiv.org/abs/2406.10214v2">
+  <data key="d0">Universal randomised signatures for generative time series modelling</data>
+  <data key="d1">Randomised signature has been proposed as a flexible and easily implementable
+alternative to the well-established path signature. In this article, we employ
+randomised signature to introduce a generative model for financial time series
+data in the spirit of reservoir computing. Specifically, we propose a novel
+Wasserstein-type distance based on discrete-time randomised signatures. This
+metric on the space of probability measures captures the distance between
+(conditional) distributions. Its use is justified by our novel universal
+approximation results for randomised signatures on the space of continuous
+functions taking the underlying path as an input. We then use our metric as the
+loss function in a non-adversarial generator model for synthetic time series
+data based on a reservoir neural stochastic differential equation. We compare
+the results of our model to benchmarks from the existing literature.</data>
+  <data key="d2">ccd524af7271f68379a5a804f6df2c9c2a51663f</data>
+</node>
+<node id="76312c5befcc0cc56888fd8618851c1baac83c86">
+  <data key="d0">Thinking in Categories: A Survey on Assessing the Quality for Time Series Synthesis</data>
+  <data key="d1"></data>
+  <data key="d2">76312c5befcc0cc56888fd8618851c1baac83c86</data>
+</node>
+<node id="047209369a042f6f4504d910ee0d1b2bb2c5841b">
+  <data key="d0">Generative Adversarial Networks for Synthetic Data Generation in Finance: Evaluating Statistical Similarities and Quality Assessment</data>
+  <data key="d1">Generating synthetic data is a complex task that necessitates accurately replicating the statistical and mathematical properties of the original data elements. In sectors such as finance, utilizing and disseminating real data for research or model development can pose substantial privacy risks owing to the inclusion of sensitive information. Additionally, authentic data may be scarce, particularly in specialized domains where acquiring ample, varied, and high-quality data is difficult or costly. This scarcity or limited data availability can limit the training and testing of machine-learning models. In this paper, we address this challenge. In particular, our task is to synthesize a dataset with similar properties to an input dataset about the stock market. The input dataset is anonymized and consists of very few columns and rows, contains many inconsistencies, such as missing rows and duplicates, and its values are not normalized, scaled, or balanced. We explore the utilization of generative adversarial networks, a deep-learning technique, to generate synthetic data and evaluate its quality compared to the input stock dataset. Our innovation involves generating artificial datasets that mimic the statistical properties of the input elements without revealing complete information. For example, synthetic datasets can capture the distribution of stock prices, trading volumes, and market trends observed in the original dataset. The generated datasets cover a wider range of scenarios and variations, enabling researchers and practitioners to explore different market conditions and investment strategies. This diversity can enhance the robustness and generalization of machine-learning models. We evaluate our synthetic data in terms of the mean, similarities, and correlations.</data>
+  <data key="d2">047209369a042f6f4504d910ee0d1b2bb2c5841b</data>
+</node>
+<node id="http://arxiv.org/abs/2403.14724v1">
+  <data key="d0">Six Levels of Privacy: A Framework for Financial Synthetic Data</data>
+  <data key="d1">Synthetic Data is increasingly important in financial applications. In
+addition to the benefits it provides, such as improved financial modeling and
+better testing procedures, it poses privacy risks as well. Such data may arise
+from client information, business information, or other proprietary sources
+that must be protected. Even though the process by which Synthetic Data is
+generated serves to obscure the original data to some degree, the extent to
+which privacy is preserved is hard to assess. Accordingly, we introduce a
+hierarchy of ``levels'' of privacy that are useful for categorizing Synthetic
+Data generation methods and the progressively improved protections they offer.
+While the six levels were devised in the context of financial applications,
+they may also be appropriate for other industries as well. Our paper includes:
+A brief overview of Financial Synthetic Data, how it can be used, how its value
+can be assessed, privacy risks, and privacy attacks. We close with details of
+the ``Six Levels'' that include defenses against those attacks.</data>
+  <data key="d2">80f123e00bb71e6d9e0e1f6e030d5b50ccca43ee</data>
+</node>
+<node id="http://arxiv.org/abs/2402.17944v4">
+  <data key="d0">Large Language Models(LLMs) on Tabular Data: Prediction, Generation, and  Understanding -- A Survey</data>
+  <data key="d1">Recent breakthroughs in large language modeling have facilitated rigorous
+exploration of their application in diverse tasks related to tabular data
+modeling, such as prediction, tabular data synthesis, question answering, and
+table understanding. Each task presents unique challenges and opportunities.
+However, there is currently a lack of comprehensive review that summarizes and
+compares the key techniques, metrics, datasets, models, and optimization
+approaches in this research domain. This survey aims to address this gap by
+consolidating recent progress in these areas, offering a thorough survey and
+taxonomy of the datasets, metrics, and methodologies utilized. It identifies
+strengths, limitations, unexplored territories, and gaps in the existing
+literature, while providing some insights for future research directions in
+this vital and rapidly evolving field. It also provides relevant code and
+datasets references. Through this comprehensive review, we hope to provide
+interested readers with pertinent references and insightful perspectives,
+empowering them with the necessary tools and knowledge to effectively navigate
+and address the prevailing challenges in the field.</data>
+  <data key="d2">2046b2da23eb2f79744eb391d902da9cedf87947</data>
+</node>
+<node id="http://arxiv.org/abs/2401.10744v1">
+  <data key="d0">FinLLMs: A Framework for Financial Reasoning Dataset Generation with  Large Language Models</data>
+  <data key="d1">Large Language models (LLMs) usually rely on extensive training datasets. In
+the financial domain, creating numerical reasoning datasets that include a mix
+of tables and long text often involves substantial manual annotation expenses.
+To address the limited data resources and reduce the annotation cost, we
+introduce FinLLMs, a method for generating financial question-answering data
+based on common financial formulas using Large Language Models. First, we
+compile a list of common financial formulas and construct a graph based on the
+variables these formulas employ. We then augment the formula set by combining
+those that share identical variables as new elements. Specifically, we explore
+formulas obtained by manual annotation and merge those formulas with shared
+variables by traversing the constructed graph. Finally, utilizing GPT-3.5, we
+generate financial question-answering data that encompasses both tabular
+information and long textual content, building on the collected formula set.
+Our experiments demonstrate that synthetic data generated by FinLLMs
+effectively enhances the performance of several large-scale numerical reasoning
+models in the financial domain, outperforming two established benchmark
+financial question-answering datasets.</data>
+  <data key="d2">e606b277ede9d184412ea7e296899b7894cf76cd</data>
+</node>
+<node id="http://arxiv.org/abs/2401.06263v1">
+  <data key="d0">FedTabDiff: Federated Learning of Diffusion Probabilistic Models for  Synthetic Mixed-Type Tabular Data Generation</data>
+  <data key="d1">Realistic synthetic tabular data generation encounters significant challenges
+in preserving privacy, especially when dealing with sensitive information in
+domains like finance and healthcare. In this paper, we introduce
+\textit{Federated Tabular Diffusion} (FedTabDiff) for generating high-fidelity
+mixed-type tabular data without centralized access to the original tabular
+datasets. Leveraging the strengths of \textit{Denoising Diffusion Probabilistic
+Models} (DDPMs), our approach addresses the inherent complexities in tabular
+data, such as mixed attribute types and implicit relationships. More
+critically, FedTabDiff realizes a decentralized learning scheme that permits
+multiple entities to collaboratively train a generative model while respecting
+data privacy and locality. We extend DDPMs into the federated setting for
+tabular data generation, which includes a synchronous update scheme and
+weighted averaging for effective model aggregation. Experimental evaluations on
+real-world financial and medical datasets attest to the framework's capability
+to produce synthetic data that maintains high fidelity, utility, privacy, and
+coverage.</data>
+  <data key="d2">0b980f24f855f7e478082fc7406454c822a715c8</data>
+</node>
+<node id="b3eff469072d88ac9189fb3224eeea4394640618">
+  <data key="d0">Sig‐Wasserstein GANs for conditional time series generation</data>
+  <data key="d1">Generative adversarial networks (GANs) have been extremely successful in generating samples, from seemingly high‐dimensional probability measures. However, these methods struggle to capture the temporal dependence of joint probability distributions induced by time‐series data. Furthermore, long time‐series data streams hugely increase the dimension of the target space, which may render generative modeling infeasible. To overcome these challenges, motivated by the autoregressive models in econometric, we are interested in the conditional distribution of future time series given the past information. We propose the generic conditional Sig‐WGAN framework by integrating Wasserstein‐GANs (WGANs) with mathematically principled and efficient path feature extraction called the signature of a path. The signature of a path is a graded sequence of statistics that provides a universal description for a stream of data, and its expected value characterizes the law of the time‐series model. In particular, we develop the conditional Sig‐ W1$W_1$ metric that captures the conditional joint law of time series models and use it as a discriminator. The signature feature space enables the explicit representation of the proposed discriminators, which alleviates the need for expensive training. We validate our method on both synthetic and empirical dataset and observe that our method consistently and significantly outperforms state‐of‐the‐art benchmarks with respect to measures of similarity and predictive ability.</data>
+  <data key="d2">b3eff469072d88ac9189fb3224eeea4394640618</data>
+</node>
+<node id="http://arxiv.org/abs/2006.04212v1">
+  <data key="d0">Generating Realistic Stock Market Order Streams</data>
+  <data key="d1">We propose an approach to generate realistic and high-fidelity stock market
+data based on generative adversarial networks (GANs). Our Stock-GAN model
+employs a conditional Wasserstein GAN to capture history dependence of orders.
+The generator design includes specially crafted aspects including components
+that approximate the market's auction mechanism, augmenting the order history
+with order-book constructions to improve the generation task. We perform an
+ablation study to verify the usefulness of aspects of our network structure. We
+provide a mathematical characterization of distribution learned by the
+generator. We also propose statistics to measure the quality of generated
+orders. We test our approach with synthetic and actual market data, compare to
+many baseline generative models, and find the generated data to be close to
+real data.</data>
+  <data key="d2">81b61f10d840e6797acb18f02a2c9afb7fa95306</data>
+</node>
+<node id="http://arxiv.org/abs/1907.06673v2">
+  <data key="d0">Quant GANs: Deep Generation of Financial Time Series</data>
+  <data key="d1">Modeling financial time series by stochastic processes is a challenging task
+and a central area of research in financial mathematics. As an alternative, we
+introduce Quant GANs, a data-driven model which is inspired by the recent
+success of generative adversarial networks (GANs). Quant GANs consist of a
+generator and discriminator function, which utilize temporal convolutional
+networks (TCNs) and thereby achieve to capture long-range dependencies such as
+the presence of volatility clusters. The generator function is explicitly
+constructed such that the induced stochastic process allows a transition to its
+risk-neutral distribution. Our numerical results highlight that distributional
+properties for small and large lags are in an excellent agreement and
+dependence properties such as volatility clusters, leverage effects, and serial
+autocorrelations can be generated by the generator function of Quant GANs,
+demonstrably in high fidelity.</data>
+  <data key="d2">3cf57cad75d71bffac9fc4589d7b294d90558a13</data>
+</node>
+<node id="http://arxiv.org/abs/1907.00503v2">
+  <data key="d0">Modeling Tabular data using Conditional GAN</data>
+  <data key="d1">Modeling the probability distribution of rows in tabular data and generating
+realistic synthetic data is a non-trivial task. Tabular data usually contains a
+mix of discrete and continuous columns. Continuous columns may have multiple
+modes whereas discrete columns are sometimes imbalanced making the modeling
+difficult. Existing statistical and deep neural network models fail to properly
+model this type of data. We design TGAN, which uses a conditional generative
+adversarial network to address these challenges. To aid in a fair and thorough
+comparison, we design a benchmark with 7 simulated and 8 real datasets and
+several Bayesian network baselines. TGAN outperforms Bayesian methods on most
+of the real datasets whereas other deep learning methods could not.</data>
+  <data key="d2">e7f3478fd8aac6940a4bf4f5eb60ac38f6b0b85b</data>
+</node>
+<node id="http://arxiv.org/abs/1904.12066v1">
+  <data key="d0">ABIDES: Towards High-Fidelity Market Simulation for AI Research</data>
+  <data key="d1">We introduce ABIDES, an Agent-Based Interactive Discrete Event Simulation
+environment. ABIDES is designed from the ground up to support AI agent research
+in market applications. While simulations are certainly available within
+trading firms for their own internal use, there are no broadly available
+high-fidelity market simulation environments. We hope that the availability of
+such a platform will facilitate AI research in this important area. ABIDES
+currently enables the simulation of tens of thousands of trading agents
+interacting with an exchange agent to facilitate transactions. It supports
+configurable pairwise network latencies between each individual agent as well
+as the exchange. Our simulator's message-based design is modeled after NASDAQ's
+published equity trading protocols ITCH and OUCH. We introduce the design of
+the simulator and illustrate its use and configuration with sample code,
+validating the environment with example trading scenarios. The utility of
+ABIDES is illustrated through experiments to develop a market impact model. We
+close with discussion of future experimental problems it can be used to
+explore, such as the development of ML-based trading algorithms.</data>
+  <data key="d2">44a7f1b4cb157a1621d5a6cf462458ff005e2339</data>
+</node>
+<node id="http://arxiv.org/abs/1904.11419v1">
+  <data key="d0">Time Series Simulation by Conditional Generative Adversarial Net</data>
+  <data key="d1">Generative Adversarial Net (GAN) has been proven to be a powerful machine
+learning tool in image data analysis and generation. In this paper, we propose
+to use Conditional Generative Adversarial Net (CGAN) to learn and simulate time
+series data. The conditions can be both categorical and continuous variables
+containing different kinds of auxiliary information. Our simulation studies
+show that CGAN is able to learn different kinds of normal and heavy tail
+distributions, as well as dependent structures of different time series and it
+can further generate conditional predictive distributions consistent with the
+training data distributions. We also provide an in-depth discussion on the
+rationale of GAN and the neural network as hierarchical splines to draw a clear
+connection with the existing statistical method for distribution generation. In
+practice, CGAN has a wide range of applications in the market risk and
+counterparty risk analysis: it can be applied to learn the historical data and
+generate scenarios for the calculation of Value-at-Risk (VaR) and Expected
+Shortfall (ES) and predict the movement of the market risk factors. We present
+a real data analysis including a backtesting to demonstrate CGAN is able to
+outperform the Historic Simulation, a popular method in market risk analysis
+for the calculation of VaR. CGAN can also be applied in the economic time
+series modeling and forecasting, and an example of hypothetical shock analysis
+for economic models and the generation of potential CCAR scenarios by CGAN is
+given at the end of the paper.</data>
+  <data key="d2">2a51bc8399da444a223265cdb99b4c6251022404</data>
+</node>
+<node id="94524e8a76bbf0b9162966d1b1825dddcdcf1ab7">
+  <data key="d0">Using the RetSim Fraud Simulation Tool to Set Thresholds for Triage of Retail Fraud</data>
+  <data key="d1"></data>
+  <data key="d2">94524e8a76bbf0b9162966d1b1825dddcdcf1ab7</data>
+</node>
+<node id="2faed3265a07adc15edf7eb157a34c08732b1101">
+  <data key="d0">PrivBayes: private data release via bayesian networks</data>
+  <data key="d1"></data>
+  <data key="d2">2faed3265a07adc15edf7eb157a34c08732b1101</data>
+</node>
+<node id="d14d79adae46c1abaa5438bde0512d28d9f5a9b1">
+  <data key="d0">Agent-based Computational Finance</data>
+  <data key="d1"></data>
+  <data key="d2">d14d79adae46c1abaa5438bde0512d28d9f5a9b1</data>
+</node>
+<node id="http://arxiv.org/abs/2503.06444v1">
+  <data key="d0">CtrTab: Tabular Data Synthesis with High-Dimensional and Limited Data</data>
+  <data key="d1">Diffusion-based tabular data synthesis models have yielded promising results.
+However, we observe that when the data dimensionality increases, existing
+models tend to degenerate and may perform even worse than simpler,
+non-diffusion-based models. This is because limited training samples in
+high-dimensional space often hinder generative models from capturing the
+distribution accurately. To address this issue, we propose CtrTab-a condition
+controlled diffusion model for tabular data synthesis-to improve the
+performance of diffusion-based generative models in high-dimensional, low-data
+scenarios. Through CtrTab, we inject samples with added Laplace noise as
+control signals to improve data diversity and show its resemblance to L2
+regularization, which enhances model robustness. Experimental results across
+multiple datasets show that CtrTab outperforms state-of-the-art models, with
+performance gap in accuracy over 80% on average. Our source code will be
+released upon paper publication.</data>
+  <data key="d2">df691af42a37e1aaf2e829f693af02932ae0477d</data>
+</node>
+<node id="http://arxiv.org/abs/2412.18111v1">
+  <data key="d0">AIGT: AI Generative Table Based on Prompt</data>
+  <data key="d1">Tabular data, which accounts for over 80% of enterprise data assets, is vital
+in various fields. With growing concerns about privacy protection and
+data-sharing restrictions, generating high-quality synthetic tabular data has
+become essential. Recent advancements show that large language models (LLMs)
+can effectively gener-ate realistic tabular data by leveraging semantic
+information and overcoming the challenges of high-dimensional data that arise
+from one-hot encoding. However, current methods do not fully utilize the rich
+information available in tables. To address this, we introduce AI Generative
+Table (AIGT) based on prompt enhancement, a novel approach that utilizes meta
+data information, such as table descriptions and schemas, as prompts to
+generate ultra-high quality synthetic data. To overcome the token limit
+constraints of LLMs, we propose long-token partitioning algorithms that enable
+AIGT to model tables of any scale. AIGT achieves state-of-the-art performance
+on 14 out of 20 public datasets and two real industry datasets within the
+Alipay risk control system.</data>
+  <data key="d2">104ccdc546192be0b0f056c3a579738996c5e58b</data>
+</node>
+<node id="http://arxiv.org/abs/2411.03351v1">
+  <data key="d0">Tabular Data Synthesis with Differential Privacy: A Survey</data>
+  <data key="d1">Data sharing is a prerequisite for collaborative innovation, enabling
+organizations to leverage diverse datasets for deeper insights. In real-world
+applications like FinTech and Smart Manufacturing, transactional data, often in
+tabular form, are generated and analyzed for insight generation. However, such
+datasets typically contain sensitive personal/business information, raising
+privacy concerns and regulatory risks. Data synthesis tackles this by
+generating artificial datasets that preserve the statistical characteristics of
+real data, removing direct links to individuals. However, attackers can still
+infer sensitive information using background knowledge. Differential privacy
+offers a solution by providing provable and quantifiable privacy protection.
+Consequently, differentially private data synthesis has emerged as a promising
+approach to privacy-aware data sharing. This paper provides a comprehensive
+overview of existing differentially private tabular data synthesis methods,
+highlighting the unique challenges of each generation model for generating
+tabular data under differential privacy constraints. We classify the methods
+into statistical and deep learning-based approaches based on their generation
+models, discussing them in both centralized and distributed environments. We
+evaluate and compare those methods within each category, highlighting their
+strengths and weaknesses in terms of utility, privacy, and computational
+complexity. Additionally, we present and discuss various evaluation methods for
+assessing the quality of the synthesized data, identify research gaps in the
+field and directions for future research.</data>
+  <data key="d2">127b664a73b0ac6b187bd3eb3d4ab8b4c760bf34</data>
+</node>
+<node id="http://arxiv.org/abs/2401.00974v1">
+  <data key="d0">Downstream Task-Oriented Generative Model Selections on Synthetic Data  Training for Fraud Detection Models</data>
+  <data key="d1">Devising procedures for downstream task-oriented generative model selections
+is an unresolved problem of practical importance. Existing studies focused on
+the utility of a single family of generative models. They provided limited
+insights on how synthetic data practitioners select the best family generative
+models for synthetic training tasks given a specific combination of machine
+learning model class and performance metric. In this paper, we approach the
+downstream task-oriented generative model selections problem in the case of
+training fraud detection models and investigate the best practice given
+different combinations of model interpretability and model performance
+constraints. Our investigation supports that, while both Neural
+Network(NN)-based and Bayesian Network(BN)-based generative models are both
+good to complete synthetic training task under loose model interpretability
+constrain, the BN-based generative models is better than NN-based when
+synthetic training fraud detection model under strict model interpretability
+constrain. Our results provides practical guidance for machine learning
+practitioner who is interested in replacing their training dataset from real to
+synthetic, and shed lights on more general downstream task-oriented generative
+model selection problems.</data>
+  <data key="d2">aa507a1bac66388026159543743360113e53f771</data>
+</node>
+<node id="http://arxiv.org/abs/2311.15974v1">
+  <data key="d0">Adaptive Agents and Data Quality in Agent-Based Financial Markets</data>
+  <data key="d1">We present our Agent-Based Market Microstructure Simulation (ABMMS), an
+Agent-Based Financial Market (ABFM) that captures much of the complexity
+present in the US National Market System for equities (NMS). Agent-Based models
+are a natural choice for understanding financial markets. Financial markets
+feature a constrained action space that should simplify model creation, produce
+a wealth of data that should aid model validation, and a successful ABFM could
+strongly impact system design and policy development processes. Despite these
+advantages, ABFMs have largely remained an academic novelty. We hypothesize
+that two factors limit the usefulness of ABFMs. First, many ABFMs fail to
+capture relevant microstructure mechanisms, leading to differences in the
+mechanics of trading. Second, the simple agents that commonly populate ABFMs do
+not display the breadth of behaviors observed in human traders or the trading
+systems that they create. We investigate these issues through the development
+of ABMMS, which features a fragmented market structure, communication
+infrastructure with propagation delays, realistic auction mechanisms, and more.
+As a baseline, we populate ABMMS with simple trading agents and investigate
+properties of the generated data. We then compare the baseline with
+experimental conditions that explore the impacts of market topology or
+meta-reinforcement learning agents. The combination of detailed market
+mechanisms and adaptive agents leads to models whose generated data more
+accurately reproduce stylized facts observed in actual markets. These
+improvements increase the utility of ABFMs as tools to inform design and policy
+decisions.</data>
+  <data key="d2">95d3ca50c1c87d6e7f8e4065db62738c221ff27b</data>
+</node>
+<node id="http://arxiv.org/abs/2307.12987v2">
+  <data key="d0">Deep Calibration of Multi-Agent Model for Simulating Real-World Stock  Trading</data>
+  <data key="d1">Multi-agent market model is a stock trading simulation system, which
+generates order flow given the agent variable of the model. We study
+calibrating the agent variable to simulate the order flow of any given
+historical trading day. In contrast to the traditional calibration that relies
+on the inefficient iterative search, we propose DeepCal, the first search-free
+approach that uses deep learning to calibrate multi-agent market model. DeepCal
+learns from a novel surrogate-trading loss function to address the
+non-differentiable issue induced by the multi-agent model and introduces a
+condition-aware variable estimator, adapting the trading simulation to
+different market conditions to enhance explainability. Through extensive
+experiments on real order-book data over a whole year, DeepCal has demonstrated
+comparable simulation accuracy (&lt;0.36 in Kolmogorov-Smirnov statistic) to
+traditional search-based approaches without the need for variable search, and
+can effectively capture the correlation between agent variable and multiple
+market-condition indexes~(PPI, PMI, CPI, market trend and market noise).</data>
+  <data key="d2">877ab3c7055aeb72480ff2c2a29bee53683aeb95</data>
+</node>
+<node id="http://arxiv.org/abs/2208.14207v1">
+  <data key="d0">Understanding intra-day price formation process by agent-based financial  market simulation: calibrating the extended chiarella model</data>
+  <data key="d1">This article presents XGB-Chiarella, a powerful new approach for deploying
+agent-based models to generate realistic intra-day artificial financial price
+data. This approach is based on agent-based models, calibrated by XGBoost
+machine learning surrogate. Following the Extended Chiarella model, three types
+of trading agents are introduced in this agent-based model: fundamental
+traders, momentum traders, and noise traders. In particular, XGB-Chiarella
+focuses on configuring the simulation to accurately reflect real market
+behaviours. Instead of using the original Expectation-Maximisation algorithm
+for parameter estimation, the agent-based Extended Chiarella model is
+calibrated using XGBoost machine learning surrogate. It is shown that the
+machine learning surrogate learned in the proposed method is an accurate proxy
+of the true agent-based market simulation. The proposed calibration method is
+superior to the original Expectation-Maximisation parameter estimation in terms
+of the distance between historical and simulated stylised facts. With the same
+underlying model, the proposed methodology is capable of generating realistic
+price time series in various stocks listed at three different exchanges, which
+indicates the universality of intra-day price formation process. For the time
+scale (minutes) chosen in this paper, one agent per category is shown to be
+sufficient to capture the intra-day price formation process. The proposed
+XGB-Chiarella approach provides insights that the price formation process is
+comprised of the interactions between momentum traders, fundamental traders,
+and noise traders. It can also be used to enhance risk management by
+practitioners.</data>
+  <data key="d2">da0da5befc424a7d2448be5f2ed8bbaf5d5676e4</data>
+</node>
+<node id="b8777a1e12cf3d235e4e92f17ab26b455be9b704">
+  <data key="d0">Generation of Realistic Synthetic Financial Time-series</data>
+  <data key="d1"></data>
+  <data key="d2">b8777a1e12cf3d235e4e92f17ab26b455be9b704</data>
+</node>
+<node id="4d5ee382c10175d0ec8c8deac4ca39d374cdd9d4">
+  <data key="d0">Agent-based artificial financial market with evolutionary algorithm</data>
+  <data key="d1">Abstract In traditional financial studies, existing approaches are unable to address increasingly complex problems. In this paper, an artificial financial market is proposed, in accordance with the adaptation market hypothesis, using artificial intelligence algorithms. This market includes three types of agents with different investments and risk preferences, representing the heterogeneity of traders. Genetic network programming is combined with a state-action-reward-state-action (SARSA)(λ) algorithm for designing the market to reflect the adaptation of technical agents. A pricing mechanism is taken into consideration, based on the auction mechanism of the Chinese securities market. The characteristics of price time series are analyzed to determine whether excessive volatility exists in four different markets. Explanations are provided for the corresponding financial phenomena considering the hypotheses under the proposed novel artificial financial market.</data>
+  <data key="d2">4d5ee382c10175d0ec8c8deac4ca39d374cdd9d4</data>
+</node>
+<node id="http://arxiv.org/abs/2108.07806v2">
+  <data key="d0">Simulation and estimation of an agent-based market-model with a matching  engine</data>
+  <data key="d1">An agent-based model with interacting low frequency liquidity takers
+inter-mediated by high-frequency liquidity providers acting collectively as
+market makers can be used to provide realistic simulated price impact curves.
+This is possible when agent-based model interactions occur asynchronously via
+order matching using a matching engine in event time to replace sequential
+calendar time market clearing. Here the matching engine infrastructure has been
+modified to provide a continuous feed of order confirmations and updates as
+message streams in order to conform more closely to live trading environments.
+The resulting trade and quote message data from the simulations are then
+aggregated, calibrated and visualised. Various stylised facts are presented
+along with event visualisations and price impact curves. We argue that
+additional realism in modelling can be achieved with a small set of agent
+parameters and simple interaction rules once interactions are reactive,
+asynchronous and in event time. We argue that the reactive nature of market
+agents may be a fundamental property of financial markets and when accounted
+for can allow for parsimonious modelling without recourse to additional sources
+of noise.</data>
+  <data key="d2">b07d40a08dd763050848088ba2bb91df87493c3b</data>
+</node>
+<node id="http://arxiv.org/abs/2104.09863v1">
+  <data key="d0">Calibrating an adaptive Farmer-Joshi agent-based model for financial  markets</data>
+  <data key="d1">We replicate the contested calibration of the Farmer and Joshi agent based
+model of financial markets using a genetic algorithm and a Nelder-Mead with
+threshold accepting algorithm following Fabretti. The novelty of the
+Farmer-Joshi model is that the dynamics are driven by trade entry and exit
+thresholds alone. We recover the known claim that some important stylized facts
+observed in financial markets cannot be easily found under calibration -- in
+particular those relating to the auto-correlations in the absolute values of
+the price fluctuations, and sufficient kurtosis. However, rather than concerns
+relating to the calibration method, what is novel here is that we extended the
+Farmer-Joshi model to include agent adaptation using an Brock and Hommes
+approach to strategy fitness based on trading strategy profitability. We call
+this an adaptive Farmer-Joshi model: the model allows trading agents to switch
+between strategies by favouring strategies that have been more profitable over
+some period of time determined by a free-parameter fixing the profit monitoring
+time-horizon. In the adaptive model we are able to calibrate and recover
+additional stylized facts, despite apparent degeneracy's. This is achieved by
+combining the interactions of trade entry levels with trade strategy switching.
+We use this to argue that for low-frequency trading across days, as calibrated
+to daily sampled data, feed-backs can be accounted for by strategy die-out
+based on intermediate term profitability; we find that the average trade
+monitoring horizon is approximately two to three months (or 40 to 60 days) of
+trading.</data>
+  <data key="d2">50797893e2269e7551d05cb85dfdd63c7644b6f5</data>
+</node>
+<node id="f688d1de61a6a51522f57272dd7e0288afceb7a9">
+  <data key="d0">Modelling an Artificial Financial Market: Agent Based Approach</data>
+  <data key="d1">Finans ve iktisatta rasyonellik ve homojenlik konusundaki geleneksel gorus, teorik sinirlamalar ve artan ampirik bulgular ile sorgulanmaya baslanmistir. Bu, rasyonel beklentileri olan ajanlari temsil etmekten heterojen beklentileri olan rasyonel ajanlara dogru bir paradigma degisikligine yol acmaktadir. Bu baglamda, bu calisma, ajanlar uzerindeki heterojenligi daha iyi ele almak ve aralarindaki etkilesimi yakalamak icin ajan temelli bir finansal piyasayi modellemeyi amaclamaktadir. Raberto ve digerleri (2001) tarafindan sunulan Genoa piyasa modeline dayanarak, ilkel bir ajan tabanli yapay finansal piyasa yaratilmistir. Modelin gecerliligini saglamak icin finansal varlik getirilerinin “stylized fact” olgusunu tekrarlamayi hedefliyoruz. Ajanlara onceden belirlenmis nakit ve varlik tutari atanir. Ajan tabanli simulasyon farkli senaryolar altinda yapilarak sonuclar incelendi. Ajanlar, alim satim yaparken gurultucu yatirimci veya teknik indikatorleri kullanan bir ajan olarak farklilik gosterir. Model olasilik yogunluk fonksiyonunun leptokurtik sekli, getirilerin otokorelasyon yoklugu ve ucuculuk kumelenmesi ozelliklerini tekrarlamistir.</data>
+  <data key="d2">f688d1de61a6a51522f57272dd7e0288afceb7a9</data>
+</node>
+<node id="3cbe90f929c7e262b0912ce430d33f64519456aa">
+  <data key="d0">Data Augmentation of High Frequency Financial Data Using Generative Adversarial Network</data>
+  <data key="d1"></data>
+  <data key="d2">3cbe90f929c7e262b0912ce430d33f64519456aa</data>
+</node>
+<node id="9b696581f6912296ddb28077486352b28ecd0033">
+  <data key="d0">An Agent‐Based model for Limit Order Book: Estimation and simulation</data>
+  <data key="d1"></data>
+  <data key="d2">9b696581f6912296ddb28077486352b28ecd0033</data>
+</node>
+<node id="200ac500f7d57704f673ac57bfbe431d55a998a0">
+  <data key="d0">Loss aversion in an agent-based asset pricing model</data>
+  <data key="d1">A well-defined agent-based asset pricing model able to match the widely observed properties of financial time series is valuable for testing the implications of various biases associated with investors' behaviour. Extending one of the most successful models in capturing traders behaviour, we present a new behavioural agent-based asset pricing model. Specifically, we introduce a well-known behavioural bias in the model, loss aversion, and evaluate its implications. First, measuring how close the simulated time series are to its empirical counterparts, we show that the model with loss aversion better matches and explains the properties of real-world financial data, compared with the base model without the behavioural bias. Secondly, we assess the impact of different levels of loss aversion not only on the agents' switching mechanisms, but also on the properties of the time series generated by the model. We demonstrate how for different levels of the loss aversion parameter, the biased agents tend to be driven out of the market at different points in time. Since even the simplest strategies have been shown to survive the competition in an agent-based setting, we can link our findings with the behavioural finance literature, which states that investors' systematic biases lead to unexpected market behaviour, instabilities and systematic errors. Finally, we provide an in-depth analysis of the simulated time series and show the resulting dynamics replicate a rich set of the stylized facts including: absence of autocorrelation, heavy tails, volatility clustering and conditional heavy tails of returns, long memory of absolute returns, as well as volume–volatility relations, gain–loss asymmetry, power-law behaviour and long memory of volume.</data>
+  <data key="d2">200ac500f7d57704f673ac57bfbe431d55a998a0</data>
+</node>
+<node id="d73b8204744a78afc424d180a8067fbbe79761f1">
+  <data key="d0">A deterministic behaviour for realistic price dynamics</data>
+  <data key="d1"></data>
+  <data key="d2">d73b8204744a78afc424d180a8067fbbe79761f1</data>
+</node>
+<node id="1ed77785a9304ed3961e27e1bc372616f248a7cb">
+  <data key="d0">Interactive estimation of agent-based financial markets models: modularity and learning</data>
+  <data key="d1"></data>
+  <data key="d2">1ed77785a9304ed3961e27e1bc372616f248a7cb</data>
+</node>
+<node id="c320e253ebe0840784b83e63d5ca1017f1fc5a74">
+  <data key="d0">Indirect Estimation of the Parameters of Agent Based Models of Financial Markets</data>
+  <data key="d1"></data>
+  <data key="d2">c320e253ebe0840784b83e63d5ca1017f1fc5a74</data>
+</node>
+<node id="3b26209509f00f62aa0a76575944e4abd7cc827b">
+  <data key="d0">Stochastic Volatility as a Simple Generator of Financial Power-Laws and Long Memory</data>
+  <data key="d1"></data>
+  <data key="d2">3b26209509f00f62aa0a76575944e4abd7cc827b</data>
+</node>
+<node id="http://arxiv.org/abs/cond-mat/0103600v2">
+  <data key="d0">Agent-based simulation of a financial market</data>
+  <data key="d1">This paper introduces an agent-based artificial financial market in which
+heterogeneous agents trade one single asset through a realistic trading
+mechanism for price formation. Agents are initially endowed with a finite
+amount of cash and a given finite portfolio of assets. There is no
+money-creation process; the total available cash is conserved in time. In each
+period, agents make random buy and sell decisions that are constrained by
+available resources, subject to clustering, and dependent on the volatility of
+previous periods. The model herein proposed is able to reproduce the
+leptokurtic shape of the probability density of log price returns and the
+clustering of volatility. Implemented using extreme programming and
+object-oriented technology, the simulator is a flexible computational
+experimental facility that can find applications in both academic and
+industrial research projects.</data>
+  <data key="d2">efa7cd2ac4f0479ce1f6d6c5bdc0680c7942730f</data>
+</node>
+<node id="da0d897ed410c8e80c4a8ae36d3d80f92c6ecfb7">
+  <data key="d0">Evolving traders and the business school with genetic programming: A new architecture of the agent-based artificial stock market</data>
+  <data key="d1"></data>
+  <data key="d2">da0d897ed410c8e80c4a8ae36d3d80f92c6ecfb7</data>
+</node>
+<node id="5979f7081d7a7496b0ed1c37b62239d76c9700d6">
+  <data key="d0">Some new results on the Levy, Levy and Solomon microscopic stock market model</data>
+  <data key="d1"></data>
+  <data key="d2">5979f7081d7a7496b0ed1c37b62239d76c9700d6</data>
+</node>
+<node id="http://arxiv.org/abs/cond-mat/9906434v1">
+  <data key="d0">Self-Organized Percolation Model for Stock Market Fluctuations</data>
+  <data key="d1">In the Cont-Bouchaud model [cond-mat/9712318] of stock markets, percolation
+clusters act as buying or selling investors and their statistics controls that
+of the price variations. Rather than fixing the concentration controlling each
+cluster connectivity artificially at or close to the critical value, we propose
+that clusters shatter and aggregate continuously as the concentration evolves
+randomly, reflecting the incessant time evolution of groups of opinions and
+market moods. By the mechanism of ``sweeping of an instability'' [D. Sornette,
+Journal de Physique I 4, 209 (1994)], this market model spontaneously exhibits
+reasonable power law statistics for the distribution of price changes and
+accounts for the other important stylized facts of stock market price
+fluctuations.</data>
+  <data key="d2">fca6727cea9268f0e1e88c58cfd1f5acec3d2d9e</data>
+</node>
+<node id="15104c6250a9f156047782d4f152355ff5908af2">
+  <data key="d0">Artificial economic life: a simple model of a stockmarket</data>
+  <data key="d1"></data>
+  <data key="d2">15104c6250a9f156047782d4f152355ff5908af2</data>
+</node>
+<edge source="http://arxiv.org/abs/2011.01843v2" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2011.01843v2" target="http://arxiv.org/abs/2002.02271v1"/>
+<edge source="http://arxiv.org/abs/2401.00965v1" target="http://arxiv.org/abs/2011.01843v2"/>
+<edge source="http://arxiv.org/abs/2401.00965v1" target="7794fd925ee49b41e7eb975013facc1d152f233f"/>
+<edge source="7794fd925ee49b41e7eb975013facc1d152f233f" target="http://arxiv.org/abs/2011.01843v2"/>
+<edge source="http://arxiv.org/abs/2304.10819v4" target="http://arxiv.org/abs/2011.01843v2"/>
+<edge source="http://arxiv.org/abs/2304.10819v4" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/1910.03033v1" target="http://arxiv.org/abs/2011.01843v2"/>
+<edge source="http://arxiv.org/abs/1910.03033v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="733a6590ede31cd10e67181bcf9e2e4b4061b125" target="http://arxiv.org/abs/2011.01843v2"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="http://arxiv.org/abs/2006.04212v1"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="http://arxiv.org/abs/1907.06673v2"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="http://arxiv.org/abs/1907.00503v2"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="http://arxiv.org/abs/1904.12066v1"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="http://arxiv.org/abs/1904.11419v1"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="94524e8a76bbf0b9162966d1b1825dddcdcf1ab7"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="f2f11d2063464f5661f857e5fc4976cb3cb982a4" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="67096e110a43a824d1cb0e196e0a90092d167060" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="67096e110a43a824d1cb0e196e0a90092d167060" target="b8777a1e12cf3d235e4e92f17ab26b455be9b704"/>
+<edge source="http://arxiv.org/abs/2503.04164v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2503.04164v1" target="b8777a1e12cf3d235e4e92f17ab26b455be9b704"/>
+<edge source="0c1b9a58325a478fc7a3788d79859684ef5c1867" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="0c1b9a58325a478fc7a3788d79859684ef5c1867" target="b8777a1e12cf3d235e4e92f17ab26b455be9b704"/>
+<edge source="df946123bc6bbeb9a7bce1ce48006191a92960f3" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="2406e511ad723cae3b697086ebeaf1e19e1c3dd7" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="2406e511ad723cae3b697086ebeaf1e19e1c3dd7" target="047209369a042f6f4504d910ee0d1b2bb2c5841b"/>
+<edge source="a74e551f6cbdf782e7bcb94a72e725713c3fa9bb" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="0d4641b36dde8313b34cf199d10254d2d7742fae" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="576f240e3fb6edb09d2c224064bd960fb67c72a6" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="576f240e3fb6edb09d2c224064bd960fb67c72a6" target="b3eff469072d88ac9189fb3224eeea4394640618"/>
+<edge source="16d459a38441a9fcc08e7b4b87c8fd15c6390fa4" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2411.02947v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2411.02947v1" target="b3eff469072d88ac9189fb3224eeea4394640618"/>
+<edge source="http://arxiv.org/abs/2410.22519v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2410.20808v2" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="d89872de07f90d83f93c1f26af3ab5d52a428d98" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2410.09850v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="125510e831a4a419954336847167133015010043" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="bc2dc0afd73c3a39ea750f48a7a5ee98178c48e6" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="bc2dc0afd73c3a39ea750f48a7a5ee98178c48e6" target="047209369a042f6f4504d910ee0d1b2bb2c5841b"/>
+<edge source="6daf42babffebfbed1efdd590de7fc27acbc78d6" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2407.19848v3" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2407.19848v3" target="b3eff469072d88ac9189fb3224eeea4394640618"/>
+<edge source="f789b75d667a11e14a21751be2acf99acfc236e0" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2406.19396v3" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2406.10214v2" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2406.10214v2" target="b3eff469072d88ac9189fb3224eeea4394640618"/>
+<edge source="76312c5befcc0cc56888fd8618851c1baac83c86" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="76312c5befcc0cc56888fd8618851c1baac83c86" target="b8777a1e12cf3d235e4e92f17ab26b455be9b704"/>
+<edge source="047209369a042f6f4504d910ee0d1b2bb2c5841b" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="047209369a042f6f4504d910ee0d1b2bb2c5841b" target="b8777a1e12cf3d235e4e92f17ab26b455be9b704"/>
+<edge source="http://arxiv.org/abs/2403.14724v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2402.17944v4" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2402.17944v4" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="http://arxiv.org/abs/2401.10744v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2401.06263v1" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="b3eff469072d88ac9189fb3224eeea4394640618" target="f2f11d2063464f5661f857e5fc4976cb3cb982a4"/>
+<edge source="http://arxiv.org/abs/2006.04212v1" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="http://arxiv.org/abs/1907.00503v2" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="1ed77785a9304ed3961e27e1bc372616f248a7cb"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="c320e253ebe0840784b83e63d5ca1017f1fc5a74"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="3b26209509f00f62aa0a76575944e4abd7cc827b"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="http://arxiv.org/abs/cond-mat/0103600v2"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="da0d897ed410c8e80c4a8ae36d3d80f92c6ecfb7"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="5979f7081d7a7496b0ed1c37b62239d76c9700d6"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="http://arxiv.org/abs/cond-mat/9906434v1"/>
+<edge source="d14d79adae46c1abaa5438bde0512d28d9f5a9b1" target="15104c6250a9f156047782d4f152355ff5908af2"/>
+<edge source="http://arxiv.org/abs/2503.06444v1" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="http://arxiv.org/abs/2412.18111v1" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="http://arxiv.org/abs/2411.03351v1" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="http://arxiv.org/abs/2401.00974v1" target="2faed3265a07adc15edf7eb157a34c08732b1101"/>
+<edge source="http://arxiv.org/abs/2311.15974v1" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="http://arxiv.org/abs/2307.12987v2" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="http://arxiv.org/abs/2208.14207v1" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="b8777a1e12cf3d235e4e92f17ab26b455be9b704" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="4d5ee382c10175d0ec8c8deac4ca39d374cdd9d4" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="4d5ee382c10175d0ec8c8deac4ca39d374cdd9d4" target="9b696581f6912296ddb28077486352b28ecd0033"/>
+<edge source="4d5ee382c10175d0ec8c8deac4ca39d374cdd9d4" target="da0d897ed410c8e80c4a8ae36d3d80f92c6ecfb7"/>
+<edge source="http://arxiv.org/abs/2108.07806v2" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="http://arxiv.org/abs/2104.09863v1" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="f688d1de61a6a51522f57272dd7e0288afceb7a9" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="3cbe90f929c7e262b0912ce430d33f64519456aa" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="9b696581f6912296ddb28077486352b28ecd0033" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="200ac500f7d57704f673ac57bfbe431d55a998a0" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="d73b8204744a78afc424d180a8067fbbe79761f1" target="d14d79adae46c1abaa5438bde0512d28d9f5a9b1"/>
+<edge source="d73b8204744a78afc424d180a8067fbbe79761f1" target="15104c6250a9f156047782d4f152355ff5908af2"/>
+<edge source="1ed77785a9304ed3961e27e1bc372616f248a7cb" target="15104c6250a9f156047782d4f152355ff5908af2"/>
+<edge source="http://arxiv.org/abs/cond-mat/0103600v2" target="15104c6250a9f156047782d4f152355ff5908af2"/>
+<edge source="da0d897ed410c8e80c4a8ae36d3d80f92c6ecfb7" target="15104c6250a9f156047782d4f152355ff5908af2"/>
+</graph></graphml>
