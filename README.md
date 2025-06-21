@@ -31,6 +31,7 @@ Open `main.py` and set your
 * `api_key`, 
 * `max_expand`: maximum number of papers that are checked reference and citations.
 * `max_relevant`: maximum number of relevant papers.
+
 Then 
 ```
 python main.py
