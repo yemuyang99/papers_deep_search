@@ -17,6 +17,8 @@
 3) a visualization of the graph. (`*.html`)
 See `example_outputs/`.
 
+![demo](demo.gif)
+
 ### Python Environment Setup
 ```
 conda create -n papers python=3.11 -y
